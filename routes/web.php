@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +16,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('fotos/{numero?}',function($numero = "sin numero"){
-    return'Estas en la galeria:'.$numero; 
-})->where('numero','[0-9]+');
-
-Route::view('galeria','fotos',['numero'=> 125]);
