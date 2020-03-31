@@ -3014,6 +3014,9 @@
             "require": {
                 "php": "^7.1"
             },
+            "require": {
+                "symfony/http-foundation": "4.4.7"
+              },
             "require-dev": {
                 "doctrine/coding-standard": "^6.0",
                 "ext-pdo": "*",
